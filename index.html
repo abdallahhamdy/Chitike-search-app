@@ -24,7 +24,11 @@
         var tweet_list = $("#tweets"); 
  
         function load_tweets() {
+<<<<<<< HEAD
             $.getJSON("/twitter?hi", function(tweets) {
+=======
+            $.getJSON("/twitter?Twitter", function(tweets) {
+>>>>>>> cea6111bf95c2d17919840272fbb72ddb1922b76
                 $.each(tweets.results, function() {
                     $("<li>").html(this.text).prependTo(tweet_list);
                 });

@@ -4,7 +4,7 @@ var sys = require("util"),
     events = require("events");
 
 var rl = require('readline');
-//var timeoutReached = false;  // Service level agreemet initilization 
+var timeoutReached = false;  // Service level agreemet initilization 
 
 var client = http.createClient(80, "github.com"),
     body = "";
